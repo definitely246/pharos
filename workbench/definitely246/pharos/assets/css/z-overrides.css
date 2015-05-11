@@ -1,0 +1,55 @@
+body, .navbar-default, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background-color: #333;
+}
+
+.navbar-default {
+	border-color: #333;
+}
+
+.sidebar ul li {
+	border-bottom: none;
+}
+
+.sidebar ul li a, .navbar-default .navbar-brand, .navbar-top-links > .dropdown > a {
+	color: whitesmoke;
+}
+
+.sidebar ul li a.active, .nav>li>a:hover, .nav>li>a:focus {
+	background-color: #444;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.code-area {
+	width: 100%;
+	min-height: 300px;
+}
+
+.panel-purple > .panel-heading {
+	background-color: #790CE8;
+	color: #fff;
+	border-color: #790CE8;
+}
+
+.panel-purple {
+	border-color: #790CE8;
+}
+
+.panel-body .nav>li>a:focus, .panel-body .nav>li>a:hover  {
+	background-color: #fafafa;
+}
+
+.alert {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.alert-push-down {
+	margin-top: 5px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+display: none !important;
+}

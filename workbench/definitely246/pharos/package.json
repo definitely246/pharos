@@ -1,0 +1,77 @@
+{
+  "name": "pharos",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-jasmine": "^0.8.0",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-includes": "~0.4.5",
+    "karma": "^0.12.23",
+    "karma-jasmine": "^0.1.5",
+    "karma-junit-reporter": "^0.2.2",
+    "matchdep": "~0.1.2",
+    "protractor": "^1.1.1",
+    "shelljs": "^0.2.6",
+    "grunt-phpunit": "~0.3.2"
+  },
+  "assets": {
+    "jsPaths": [
+      "bower_components/jquery/dist/jquery.js",
+      "bower_components/underscore/underscore.js",
+      "bower_components/angular/angular.js",
+      "bower_components/angular-messages/angular-messages.js",
+      "bower_components/bootstrap/dist/js/bootstrap.js",
+      "assets/plugins/js/**/*.js",
+      "assets/js/**/*.js"
+    ],
+    "cssPaths": [
+      "assets/plugins/css/**/*.css",
+      "assets/css/**/*.css"
+    ],
+    "jsConcatFile": "public/js/pharos.js",
+    "jsMinifyFile": "public/js/pharos.min.js",
+    "cssConcatFile": "public/css/pharos.css",
+    "cssMinifyFile": "public/css/pharos.min.css",
+    "viewPath": "src/views/**",
+    "copy": [
+      {
+        "expand": true,
+        "cwd": "assets/fonts/",
+        "src": "**",
+        "dest": "public/fonts/"
+      },
+      {
+        "expand": true,
+        "cwd": "public/",
+        "src": "**",
+        "dest": "../../../public/packages/definitely246/pharos/"
+      }
+    ]
+  },
+  "jasmine" : {
+    "watchPaths" : ["assets/tests/unit/*.js", "public/js/*.js"],
+    "testDirectory" : "assets/tests/unit/*.js",
+    "sources": [
+      "public/js/pharos.min.js",
+      "bower_components/angular-route/angular-route.js",
+      "bower_components/angular-mocks/angular-mocks.js",
+      "assets/tests/mocks.js",
+      "assets/tests/mocks/*.js",
+      "assets/tests/unit/*.js"
+    ]
+  },
+  "phpunit": {
+    "watchPaths" : ["tests/**/*.php", "src/Definitely246/**"],
+    "testDirectory": "tests/",
+    "logFile": "phpunit-output.log",
+    "configuration": "phpunit.xml"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "definitely246/pharos",
+    "description": "",
+    "authors": [
+        {
+            "name": "Kelt",
+            "email": "ktd_@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/seeds",
+            "tests/PharosUnitTestCase.php"
+        ],
+        "psr-0": {
+            "Definitely246\\Pharos\\": "src/",
+            "Definitely246\\Common\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

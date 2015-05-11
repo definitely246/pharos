@@ -1,0 +1,5 @@
+mocks.pageData = {
+	resource: {
+		fields: []
+	}
+};

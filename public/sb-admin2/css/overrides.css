@@ -1,0 +1,19 @@
+body, .navbar-default, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background-color: #333;
+}
+
+.navbar-default {
+	border-color: #333;
+}
+
+.sidebar ul li {
+	border-bottom: none;
+}
+
+.sidebar ul li a, .navbar-default .navbar-brand, .navbar-top-links > .dropdown > a {
+	color: whitesmoke;
+}
+
+.sidebar ul li a.active, .nav>li>a:hover, .nav>li>a:focus {
+	background-color: #444;
+}
